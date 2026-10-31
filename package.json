@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-source-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tailwindcss -i css/input-no-source.css -o out-no-source.css && tailwindcss -i css/input.css -o out.css && tailwindcss -i css/input-source-none.css -o out-source-none.css && node check.mjs"
+  },
+  "dependencies": {
+    "ui-lib": "file:./ui-lib-1.0.0.tgz"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
